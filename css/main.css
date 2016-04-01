@@ -1,0 +1,128 @@
+* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.section1 {
+				background: url(../img/history.jpg);
+				background-size: cover;
+			}
+			
+			.section3 {
+				background: url(../img/koulan.jpg);
+				background-size: cover;
+			}
+			
+			.section4 {
+				background: url(../img/battle.jpg);
+				background-size: cover;
+			}
+			
+			.slide1 {
+				background: url(../img/kobe1.jpg);
+				background-size: cover;
+			}
+			
+			.slide2 {
+				background: url(../img/kuli.jpg);
+				background-size: cover;
+			}
+			
+			.slide3 {
+				background: url(../img/carter.jpg);
+				background-size: cover;
+			}
+			
+			.slide4 {
+				background: url(../img/wade.jpg);
+				background-size: cover;
+			}
+			
+			.adiv {
+				width: 200px;
+				height: 400px;
+				margin-top: 0px;
+				margin-left: 1000px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+			}
+			
+			.bdiv {
+				width: 200px;
+				height: 400px;
+				margin-top: 0px;
+				margin-left: 1000px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				color: blueviolet;
+				position: absolute;
+				top: 80px;
+			}
+			
+			.cdiv {
+				width: 300px;
+				height: 300px;
+				margin-top: 0px;
+				margin-left: 100px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				color: orange;
+				position: absolute;
+				top: 80px;
+			}
+			.ddiv {
+				width: 300px;
+				height: 300px;
+				margin-top: 0px;
+				margin-left: 800px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				color: floralwhite;
+				position: absolute;
+				top: 20px;
+			}
+			#h1{text-shadow: 10px 10px 15px cornflowerblue;
+				margin-top: -4000px;
+			transition: all 1s;
+			color: orange;
+			font-family: "微软雅黑";
+			font-size: 80px;
+			position: absolute;
+			top: 200px;
+			left: 300px;
+			}
+			audio{position: absolute;
+			top: 0px;
+			right: 0px;}
+			#videoPlayer{width: 550px;
+			height: 440px;
+				position: absolute;
+			top: 0px;
+			right: 50px;}
+			video{margin-top: 0px;}
+			#videocontrol{height: 40px;
+			margin-top: 0px;}
+			 #progress{height: 10px;
+			 background-color: white;
+			 cursor: pointer;}
+			 #btndiv{height: 20px;}
+			 #seekBar{width: 0px;}
+			 button{width: 60px;cursor: pointer;}
+              .battle1{
+              	width: 450px;
+              	height:550px;
+              	background: url(../img/T-mac.jpg);
+              	background-size: cover;
+              	position: absolute;
+              	top: 50px;
+              	left: 110px;
+              }
+              .battle2{
+              	width: 450px;
+              	height:550px;
+              	background: url(../img/科比.jpg);
+              	background-size: cover;
+              	position: absolute;
+              	top: 50px;
+              	right: 150px;
+              }

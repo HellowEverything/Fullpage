@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=7,IE=8,IE=9,IE=edge" />
+		<meta name="keywords" content="NBA 青春" />
+		<meta name="author" content="张森" />
+		<title>NBA宣传网页</title>
+		<!--
+        	作者：289557764@qq.com
+        	时间：2016-03-19
+        	描述：引入资源
+        -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet"  type="text/css" href="css/videostyles.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/jquery.fullPage.min.js" type="text/javascript" ></script>
+		<script src="js/jquery.jplayer.min.js" type="text/javascript"></script>
+		<script src="js/jquery.ripples.js" type="text/javascript"></script>
+		<!--
+        	作者：289557764@qq.com
+        	时间：2016-03-20
+        	描述：执行fullpage方法
+        -->
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$(function () {
+				$("#Mydiv").fullpage({
+					"scrollingSpeed":700,
+					"navigation":true,
+					"navigationPosition":"right",
+					"afterLoad":function (link, index) {
+						switch(index){
+							case 4: 
+								$("#h1").css("margin-top","0px");
+							break;
+						}
+					},
+					"onLeave":function (index, nextIndex, dir) {
+						switch(nextIndex){
+							case 4:  
+								$("#h1").css("margin-top","-4000px");
+							break;
+						}
+					}
+				});
+			});
+		});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".battle").ripples({
+						resolution: 512,
+			            dropRadius: 20, //px
+			            perturbance: 0.04,
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--
+        	作者：289557764@qq.com
+        	时间：2016-03-20
+        	描述：编写页面
+        -->
+		<div id="Mydiv" class="ripple">
+			<div class="section section1">
+				<div class="battle battle1"></div>
+				<div class="battle battle2"></div>
+				<audio id="audio"
+					src="media/a.mp3" 
+					controls="controls"
+				loop="loop">
+				</audio>
+			</div>
+			<div class="section section2">
+				<div class="slide slide1">
+					<div class='adiv'>
+						科比-布莱恩特是最好的得分手之一，突破、投篮、罚球、三分球他都驾轻就熟，几乎没有进攻盲区。 除了疯狂的得分外，科比的组织能力也很出众，另外他还是最好的防守人之一，贴身防守非常具有压迫性。
+					</div>
+				</div>
+				<div class="slide slide2">
+					<div class="bdiv">
+						斯蒂芬-科里是NBA头牌投手、联盟新生代控卫的代表、联盟中现役最好后卫之一； 除了精湛的球技以外，他还有一张可爱的娃娃脸，广大球迷都叫他“萌神”
+					</div>
+				</div>
+				<div class="slide slide3">
+					<div class="cdiv">
+						文斯-卡特司职得分后卫，也能出任小前锋的位置，弹跳惊人、爆发力极强，扣篮实力最强的扣篮王， 许多人对这都给予肯定。“加拿大飞人”同时拥有出色的突破、投射和助攻能力。防守却不被大家认可， 封盖和抢断数据还算合格，但脚步移动不够迅捷，判断能力也有所欠缺。
+					</div>
+				</div>
+				<div class="slide slide4">
+					<div class="ddiv">
+						德维恩-韦德是现役球员中，最顶级的得分后卫之一。他主要依靠自己快如 闪电的启动速度和超强的爆发力甩开防守队员杀入内线 ，然后肆虐篮框， 因此获得了“闪电侠”的外号。
+					</div>
+				</div>
+			</div>
+			<div class="section section3">
+				<!--container for everything-->
+	<div id="jp_container_1" class="jp-video jp-video-360p">
+	
+		<!--container in which our video will be played-->
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		
+		<!--main containers for our controls-->
+		<div class="jp-gui">
+		    <div class="jp-interface">
+		        <div class="jp-controls-holder">
+		
+					<!--play and pause buttons-->
+				    <a href="javascript:;" class="jp-play" tabindex="1">play</a>
+				    <a href="javascript:;" class="jp-pause" tabindex="1">pause</a>
+				    <span class="separator sep-1"></span>
+				 
+					<!--progress bar-->
+				    <div class="jp-progress">
+				        <div class="jp-seek-bar">
+							<div class="jp-play-bar"><span></span></div>
+						</div>
+				    </div>
+				 
+				    <!--time notifications-->
+				    <div class="jp-current-time"></div>
+				    <span class="time-sep">/</span>
+				    <div class="jp-duration"></div>
+				    <span class="separator sep-2"></span>
+				 
+				    <!--mute / unmute toggle-->
+				    <a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
+				    <a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
+				 
+				    <!--volume bar-->
+				    <div class="jp-volume-bar">
+				        <div class="jp-volume-bar-value"><span class="handle"></span></div>
+				    </div>
+				    <span class="separator sep-2"></span>
+				 
+				    <!--full screen toggle-->
+				    <a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a>
+				    <a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a>
+				
+		        </div><!--end jp-controls-holder-->
+		    </div><!--end jp-interface-->
+		</div><!--end jp-gui-->
+		
+		<!--unsupported message-->
+		<div class="jp-no-solution">
+		    <span>Update Required</span>
+		    Here's a message which will appear if the video isn't supported. A Flash alternative can be used here if you fancy it.
+		</div>
+	
+	</div><!--end jp_container_1-->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	 
+	    $("#jquery_jplayer_1").jPlayer({
+	        ready: function () {
+	            $(this).jPlayer("setMedia", {
+	                m4v: "1.m4v",
+	                poster:"two.jpg",
+	            });
+	        },
+	        swfPath: "js",
+	        supplied: "webmv, ogv, m4v",
+	        size: {
+	            width: "570px",
+	            height: "340px",
+	            cssClass: "jp-video-360p"
+	        }
+	    });
+	 
+	});
+	</script>
+			</div>
+			<div class="section section4">
+				<h1 id="h1">Where Is Amazing!!</h1>
+			</div>
+		</div>
+	</body>
+
+</html>
