@@ -15,49 +15,6 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet"  type="text/css" href="css/videostyles.css"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/jquery.fullPage.min.js" type="text/javascript" ></script>
-		<script src="js/jquery.jplayer.min.js" type="text/javascript"></script>
-		<script src="js/jquery.ripples.js" type="text/javascript"></script>
-		<!--
-        	作者：289557764@qq.com
-        	时间：2016-03-20
-        	描述：执行fullpage方法
-        -->
-        <script type="text/javascript">
-			$(document).ready(function(){
-				$(function () {
-				$("#Mydiv").fullpage({
-					"scrollingSpeed":700,
-					"navigation":true,
-					"navigationPosition":"right",
-					"afterLoad":function (link, index) {
-						switch(index){
-							case 4: 
-								$("#h1").css("margin-top","0px");
-							break;
-						}
-					},
-					"onLeave":function (index, nextIndex, dir) {
-						switch(nextIndex){
-							case 4:  
-								$("#h1").css("margin-top","-4000px");
-							break;
-						}
-					}
-				});
-			});
-		});
-		</script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$(".battle").ripples({
-						resolution: 512,
-			            dropRadius: 20, //px
-			            perturbance: 0.04,
-				})
-			});
-		</script>
 	</head>
 
 	<body>
@@ -179,6 +136,49 @@
 				<h1 id="h1">Where Is Amazing!!</h1>
 			</div>
 		</div>
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/jquery.fullPage.min.js" type="text/javascript" ></script>
+		<script src="js/jquery.jplayer.min.js" type="text/javascript"></script>
+		<script src="js/jquery.ripples.js" type="text/javascript"></script>
+		<!--
+        	作者：289557764@qq.com
+        	时间：2016-03-20
+        	描述：执行fullpage方法
+        -->
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$(function () {
+				$("#Mydiv").fullpage({
+					"scrollingSpeed":700,
+					"navigation":true,
+					"navigationPosition":"right",
+					"afterLoad":function (link, index) {
+						switch(index){
+							case 4: 
+								$("#h1").css("margin-top","0px");
+							break;
+						}
+					},
+					"onLeave":function (index, nextIndex, dir) {
+						switch(nextIndex){
+							case 4:  
+								$("#h1").css("margin-top","-4000px");
+							break;
+						}
+					}
+				});
+			});
+		});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".battle").ripples({
+						resolution: 512,
+			            dropRadius: 20, //px
+			            perturbance: 0.04,
+				})
+			});
+		</script>
 	</body>
 
 </html>
